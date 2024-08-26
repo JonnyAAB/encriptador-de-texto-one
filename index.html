@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <main class="contenido">
+        <section class="contenido__izquierda">
+            <img class="contenido__izquierda__logo" src="./assets/ONE_logo.png" alt="Logo del barcelona">
+            <textarea id="textoUsuario" class="contenido__izquierda__textarea" placeholder="Ingrese su texto aquí"></textarea>
+            <p class="contenido__izquierda__advertencia">
+                <i class="fas fa-exclamation-circle"></i>
+                 Solo letras minúsculas y sin acentos
+            </p>
+            <div class="contenido__izquierda__botones">
+                <button onclick="encriptarTexto();" class="boton encriptar">Encriptar</button>
+                <button onclick="desencriptarTexto();" class="boton desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section class="contenido__derecha">
+            <img class="contenido__derecha__img" src="./assets/barcelona-player-thinking.jpg" alt="Jugador del barcelona pensando">
+            <p class="contenido__derecha__texto"><strong>Ningún mensaje fue encontrado</strong></p>
+            <p class="contenido__derecha__texto2">Ingresa el texto que desees encriptar o desencriptar.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
